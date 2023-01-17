@@ -1,1 +1,23 @@
 /**/
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url('super-mario.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container
+{
+    width: 100%;
+    height: 100vh;
+    
+}
