@@ -11,7 +11,7 @@
 </head>
 <body>
     <div class="container">
-        <form>
+        <form onsubmit ="sendEmail(); reset(); return false;">
             <h1>YOUR CAREER STARTS NOW!</h1>
             <h2>The only thing stopping you is yourself...</h2>
             <h1>CONTACT US!</h1>
@@ -23,5 +23,20 @@
         </form>
     </div>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "username",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+        }
+    </script>
 </body>
 </html>
