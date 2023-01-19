@@ -1,1 +1,1 @@
-Sign Up Form application
+Sign Up Form application that sends emails.
