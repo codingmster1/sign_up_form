@@ -36,6 +36,7 @@ form
     max-width: 600px;
     border-radius: 10px;
     font-size: 18px;
+    box-shadow:0 0 30px rgb(44, 44, 172);
 }
 
 form h3
